@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<!--
+    The very first application
+-->
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/index.css" rel="stylesheet" />
+    <title>Hello World</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400i|Roboto" rel="stylesheet">
+</head>
+
+<!--  BEGINS: Page style settings -->
+
+<style>
+    html {
+        font-family: 'Open Sans', sans-serif;
+        background-color: inherit;
+    }
+    
+    img {
+        width: 100%;
+    }
+    
+    h1,
+    h3{
+    font-family: 'Open Sans', sans-serif;
+    }
+    
+    p {
+    font-family:'Roboto', sans-serif;
+        font-size: 1.3em;
+        padding-top: 10px;
+        text-align: left;
+    }
+</style>
+
+<!--  ENDS: Page style settings -->
+<!--  BEGINS: Content for our application -->
+
+<body class="container text-center">
+
+    <h1>ELSINOR</h1>
+<img src="img/fontana.jpg">
+<h3>chi siamo</h3> 
+<p>
+Elsinor ? centro di produzione teatrale riconosciuto dal Ministero dei beni e delle attivit? culturali e del turismo. Ha sede legale a Milano e due unit? operative locali a Firenze / Teatro Cantiere Florida e a Forl? / Teatro Giovanni Testori. Produzione di teatro di prosa e teatro per i ragazzi, ospitalit?, formazione, residenze artistiche e progetti internazionali sono le caratteristiche principali di una articolata attivit? che mira a cogliere le istanze di rinnovamento presenti nel panorama dello spettacolo dal vivo offrendo un contributo di qualit? e di originalit?.</p>
+<!--  ENDS: Content for our application  -->
+<h3>quiz</h3>
+<button id="question1" type="button" class="btn btn-default">whereis ??</button><br>
+<button id="question2" type="button" class="btn btn-default">second question???</button>
+
+<!--  BEGINS: Script block  -->
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+<script>
+    $("#question2").hide();
+    $("#question1").click(function() {
+        alert(" in California");
+	 $("#question2").show();
+    });
+    $("#question2").click(function() {
+        alert("yes");
+	  });
+</script>
+<!--  ENDS: Script block  -->
+
+</html>
